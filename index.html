@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Interactive Plots</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anemia Pathways</title>
 </head>
 <body>
-    <h1>Interactive Plots</h1>
-    
-    <ul>
-        <li><a href='aplastic_acd.html'>Pathway 1</a></li>
-        <li><a href='no_hem_unspec.html'>Pathway 2</a></li>
-    </ul>
+    <header>
+        <h1>Interactive Anemia Diagnosis Pathway Plots</h1>
+    </header>
+    <main>
+        <section class="feature">
+            <h2>A Brief Description</h2>
+            <p>This page displays links to the interactive plots for the paper entitled "Extracting Diagnosis Pathways from Electronic Health Records
+                using Deep Reinforcement Learning". The Sankey diagrams shown display the pathways learned by the model for each particular anemia class. 
+                Each diagram is generated from the trajectories followed by the model leading to that anemia class' diagnosis. 
+                The green pathways represent the correctly diagnosed patients whereas the red pathways concluded in an incorrect diagnosis.
+                The orange nodes depict the actions that query for feature values nodes, while the diagnosis actions are the purple nodes at the end. 
+                In addition, the size of each flow corresponds to its support, i.e., the number of patients that have it in their pathway.
+            </p>
+        </section>
+    </main>
+    <main>
+        <ul class="feature2">
+            <li><a href='no_anemia.html'> No anemia</a></li>
+            <li><a href='vit_b12_folate.html'>Vitamin B12/Folate deficiency anemia</a></li>
+            <li><a href='unspecified.html'>Unspecified anemia</a></li>
+            <li><a href='acd.html'>Anemia of chronic disease</a></li>
+            <li><a href='ida.html'>Iron deficiency anemia</a></li>
+            <li><a href='hemolytic.html'>Hemolytic anemia</a></li>
+            <li><a href='aplastic.html'>Aplastic anemia</a></li>
+            <li><a href='inconclusive.html'>Inconclusive diagnosis</a></li>
+        </ul>
+    </main>
 </body>
 </html>
