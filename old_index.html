@@ -1,37 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="linkstyle.css">
-    <title>Interactive Plots</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Content</title>
 </head>
 <body>
-    <div>
-        <h1>Interactive Pathway Plots</h1>
-    </div>
-    
-    <div id="related_links">
-        <ul>
-            <li><a href='no_anemia.html'> No anemia</a></li>
-            <li><a href='vit_b12_folate.html'>Vitamin B12/Folate deficiency anemia</a></li>
-            <li><a href='unspecified.html'>Unspecified anemia</a></li>
-            <li><a href='acd.html'>Anemia of chronic disease</a></li>
-            <li><a href='ida.html'>Iron deficiency anemia</a></li>
-            <li><a href='hemolytic.html'>Hemolytic anemia</a></li>
-            <li><a href='aplastic.html'>aplastic anemia</a></li>
-            <li><a href='inconclusive.html'>Inconclusive diagnosis</a></li>
-        </ul>
-    </div>
-    <div>
-        <p>The above pathway diagrams are Sankey diagrams showing the pathways learned by the model for each particular anemia class. 
-            Each diagram is generated from the trajectories followed by the model leading to that anemia class' diagnosis. 
-            The green pathways represent the correctly diagnosed patients whereas the red pathways concluded in an incorrect diagnosis.
-            The orange nodes depict the actions that query for feature values nodes, while the diagnosis actions are the purple nodes at the end. 
-            In addition, the size of each flow corresponds to its support, i.e., the number of patients that have it in their pathway.
-        </p>
-    </div>
-    <div>
-
-    </div>
-   
+    <a href="#" id="showContentLink">Show Content</a>
+    <div id="contentContainer" style="display: none;"></div>
+    <script src="script.js"></script>
 </body>
 </html>

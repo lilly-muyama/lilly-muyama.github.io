@@ -36,7 +36,7 @@ main {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    height: 233px;
+    height: 230px;
 }
 
 .feature2{
@@ -46,13 +46,21 @@ main {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    height: 233px;
+    /* position: absolute; */
+    height: 230px;
 
 }
 
 
 .feature h3 {
     color: #333;
+}
+
+.styled-link {
+    /* Your styling for these links */
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 /* Style the text paragraphs */
@@ -88,4 +96,28 @@ main a {
 
 main a:hover {
     color: #ff6600;
+}
+
+/* Style for the banner container */
+.logo-banner {
+    display: flex; /* Display logos in a row */
+    flex-basis: 100%;
+    justify-content: center; /* Center logos horizontally */
+    align-items: center; /* Center logos vertically */
+    background-color: rgba(0, 0, 0, 0); /* Background color for the banner */
+    padding: 20px; /* Add some padding for spacing */
+    height: 50 px;
+        position: relative;
+    top: 0px;
+    /* box-sizing: border-box; */
+}
+
+/* Style for individual logos */
+.logo {
+    max-width: 150px; /* Set a maximum width for each logo */
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    /* display: block; */
+    margin: 0 100px; /* Add spacing between logos */
 }
