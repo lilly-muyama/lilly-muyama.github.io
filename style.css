@@ -56,6 +56,9 @@ main {
     background-color: #fff;
     margin-right: 10px;
     margin-left:10px;
+    overflow: auto;
+    word-wrap: break-word;
+    text-align: justify;
 }
 
 .right-div {
@@ -75,8 +78,10 @@ main {
 
 
 
-.feature h3 {
-    color: #333;
+#h3-custom {
+    color: #fff;
+    text-decoration: underline;
+
 }
 
 .styled-link {

@@ -23,18 +23,19 @@
             <p>This page displays links to the interactive plots for the paper entitled "Deep Reinforcement Learning for Personalized Diagnostic 
                 Decision Pathways: A Comparative Study on Anemia and Systemic Lupus Erythematosus (SLE) Using Electronic Health Records". 
                 The Sankey diagrams show the pathways learned by the model for the two use cases. 
-                Each diagram is generated from the trajectories followed by the model leading to that class' diagnosis. 
                 The orange nodes depict the actions that query for feature values nodes. 
+                More information about the nodes and edges is displayed when hovering over them. 
                 In addition, the size of each flow corresponds to its support, i.e., the number of patients that have it in their pathway.
             </p>
             <p>
-                In the anemia Sankey diagrams, the green pathways represent the correctly diagnosed patients whereas the red pathways concluded in an 
-                incorrect diagnosis. The diagnoses are reprsented by the purple nodes at the end.
+                For anemia, each diagram is generated from the trajectories followed by the model leading to that anemia class' diagnosis. 
+                The green pathways represent the correctly diagnosed patients whereas the red pathways concluded in an incorrect diagnosis. 
+                The diagnoses are represented by the purple nodes at the end.
             </p>
             <p>
-                In the SLE Sankey diagrams, we show pathways from two different models which were sleceted based on their metrics, that is, accuracy 
-                and WPAHM. The three commonest pathways for each class are shown whereby each pathway is represented by a different colour. The values
-                on the edges are displayed on hovering over the nodes. The diagnosis actions are the dark green nodes at the end. 
+                For SLE, we show pathways from two different models which were selected based on their metrics, i.e., accuracy 
+                and WPAHM. The three most common pathways for each class are illustrated, with each pathway represented by a distinct color.
+                The diagnosis actions are the dark green nodes at the end. 
             </p>
             <p>
                  The full article and code can be found 
@@ -48,7 +49,7 @@
     <div class="right-div">
         <div class="list-container">
         <div class="list">
-        <h3> Anemia Pathways</h3>
+        <h3 id="h3-custom"> Anemia Pathways</h3>
         <ul>
             <li><a href='opacity/no_anemia.html'> No anemia</a></li>
             <li><a href='opacity/vit_b12_folate.html'>Vitamin B12/Folate deficiency anemia</a></li>
@@ -62,7 +63,7 @@
     </div> <!-- anemia list-->
 
     <div class="list">
-        <h3> Lupus Pathways</h3>
+        <h3 id="h3-custom"> Lupus Pathways</h3>
         <p id="p2"> Sample best accuracy model</p>
         <ul>
             <li><a href='opacity/lupus_acc.html'> Lupus</a></li>
