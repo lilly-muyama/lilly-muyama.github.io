@@ -1,0 +1,175 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and text color to the body */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Style the main content */
+main {
+    flex: 1;
+    padding: 20px;
+    /* height: 100%; */
+    /* position: relative; */
+}
+
+.container {
+    width: 100%; /* Ensures the container spans the full width */
+    overflow: hidden; /* Clears float and allows container to wrap around floated elements */
+}
+
+.left-div, .right-div {
+    /* width: calc(50% - 20px);  */
+    float: left; /* Float the divs so they appear next to each other */
+    box-sizing: border-box; /* Include padding and border in the div's total width */
+    padding: 20px; /* Optional: Add padding for spacing inside the divs */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 400px;
+}
+
+/* Optional: Add some styles for visualization */
+.left-div {
+    width: calc(50% - 20px); 
+    background-color: #fff;
+    margin-right: 10px;
+    margin-left:10px;
+    overflow: auto;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.right-div {
+    width: calc(50% - 20px); 
+    background-color: #444;
+    color: #fff;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+/* Optional: Clearfix to clear the float */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+#h3-custom {
+    color: #fff;
+    text-decoration: underline;
+
+}
+
+.styled-link {
+    /* Your styling for these links */
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Style the text paragraphs */
+p {
+    line-height: 1.5;
+}
+
+p2 {
+    line-height: 1.5;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Style the aside (the list of links) */
+aside {
+    background-color: #444;
+    color: #fff;
+    flex: 1;
+    padding: 20px;
+    /* height: 100%; */
+    /* position: absolute; */
+}
+
+div ul {
+    list-style: none;
+    padding: 10px;
+}
+
+div li {
+    margin-bottom: 9px;
+}
+
+div a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+div a:hover {
+    color: #ff6600;
+}
+
+.list-container {
+    display: flex; /* Display the list items in a row */
+    justify-content: space-between; /* Space them evenly */
+    /*margin-top: 10px; /* Add margin to separate from the previous content */
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* Optional: Add some styles for visualization */
+.list {
+    width: 45%; /* Each list occupies almost half of the container */
+    padding: 10px; /* Add padding for spacing inside the lists */
+    border: 1px solid #ccc; /* Add border for visualization */
+}
+
+
+/* Style for the banner container */
+.logo-banner {
+    display: flex; /* Display logos in a row */
+    flex-basis: 100%;
+    justify-content: center; /* Center logos horizontally */
+    align-items: center; /* Center logos vertically */
+    background-color: rgba(0, 0, 0, 0); /* Background color for the banner */
+    padding: 20px; /* Add some padding for spacing */
+    height: 50 px;
+        position: relative;
+    top: 0px;
+    /* box-sizing: border-box; */
+}
+
+/* Style for individual logos */
+.logo {
+    max-width: 150px; /* Set a maximum width for each logo */
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    /* display: block; */
+    margin: 0 100px; /* Add spacing between logos */
+}
