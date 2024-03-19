@@ -30,47 +30,38 @@ main {
     /* position: relative; */
 }
 
-.container {
-    width: 100%; /* Ensures the container spans the full width */
-    overflow: hidden; /* Clears float and allows container to wrap around floated elements */
-}
-
-.left-div, .right-div {
-    /* width: calc(50% - 20px);  */
-    float: left; /* Float the divs so they appear next to each other */
-    box-sizing: border-box; /* Include padding and border in the div's total width */
-    padding: 20px; /* Optional: Add padding for spacing inside the divs */
-    border-radius: 5px;
-    margin-bottom: 20px;
-    /* -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
-    height: 400px;
-}
-
-/* Optional: Add some styles for visualization */
-.left-div {
-    width: calc(50% - 20px); 
+.feature {
     background-color: #fff;
-    margin-right: 10px;
-    margin-left:10px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 230px;
 }
 
-.right-div {
-    width: calc(50% - 20px); 
+.feature2{
     background-color: #444;
     color: #fff;
-    margin-left: 10px;
-    margin-right:10px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* position: absolute; */
+    height: 230px;
+
 }
 
-/* Optional: Clearfix to clear the float */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+.feature3{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* position: absolute; */
+    height: 200px;
+    width: 400px
+
 }
 
 
@@ -91,13 +82,6 @@ p {
     line-height: 1.5;
 }
 
-p2 {
-    line-height: 1.5;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 /* Style the aside (the list of links) */
 aside {
     background-color: #444;
@@ -108,42 +92,25 @@ aside {
     /* position: absolute; */
 }
 
-div ul {
+main ul {
     list-style: none;
-    padding: 10px;
+    padding: 20px;
 }
 
-div li {
-    margin-bottom: 9px;
+main li {
+    margin-bottom: 10px;
 }
 
-div a {
+main a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-div a:hover {
+main a:hover {
     color: #ff6600;
 }
-
-.list-container {
-    display: flex; /* Display the list items in a row */
-    justify-content: space-between; /* Space them evenly */
-    /*margin-top: 10px; /* Add margin to separate from the previous content */
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
-    padding: 10px;
-    border-radius: 50px;
-}
-
-/* Optional: Add some styles for visualization */
-.list {
-    width: 45%; /* Each list occupies almost half of the container */
-    padding: 10px; /* Add padding for spacing inside the lists */
-    border: 1px solid #ccc; /* Add border for visualization */
-}
-
 
 /* Style for the banner container */
 .logo-banner {
